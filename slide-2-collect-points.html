@@ -29,49 +29,49 @@
 </div>
 
 <style>
-  .cpt-slide-layout { display: flex; flex-direction: column; justify-content: center; gap: 30px; }
+  .cpt-slide-layout { display: flex !important; flex-direction: column !important; justify-content: center !important; gap: 30px !important; }
 
-  @keyframes cptChipIn { from { opacity: 0; transform: scale(0.72); } to { opacity: 1; transform: scale(1); } }
-  @keyframes cptStarIn { from { opacity: 0; transform: scale(0); } to { opacity: 1; transform: scale(1); } }
-  @keyframes cptPtsIn { from { opacity: 0; transform: translateY(10px) scale(0.82); } to { opacity: 1; transform: translateY(0) scale(1); } }
+  @keyframes cptChipIn { from { opacity: 0 !important; transform: scale(0.72) !important; } to { opacity: 1 !important; transform: scale(1) !important; } }
+  @keyframes cptStarIn { from { opacity: 0 !important; transform: scale(0) !important; } to { opacity: 1 !important; transform: scale(1) !important; } }
+  @keyframes cptPtsIn { from { opacity: 0 !important; transform: translateY(10px) scale(0.82) !important; } to { opacity: 1 !important; transform: translateY(0) scale(1) !important; } }
 
   .cpt-collect-graphic {
-    position: relative; width: 240px; max-width: 100%;
-    aspect-ratio: 240 / 210; height: auto; margin: 0 auto; color: #D05353;
+    position: relative !important; width: 240px !important; max-width: 100% !important;
+    aspect-ratio: 240 / 210 !important; height: auto !important; margin: 0 auto !important; color: #D05353 !important;
   }
   .cpt-collect-graphic .cpt-collect-star {
-    position: absolute; display: block; height: auto; aspect-ratio: 36 / 33;
-    overflow: visible; color: #D05353;
-    animation: cptStarIn 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+    position: absolute !important; display: block !important; height: auto !important; aspect-ratio: 36 / 33 !important;
+    overflow: visible !important; color: #D05353 !important;
+    animation: cptStarIn 0.4s cubic-bezier(0.22, 1, 0.36, 1) both !important;
   }
   .cpt-collect-graphic .cpt-pts-pill {
-    position: absolute; z-index: 2; padding: 4px 10px; border-radius: 999px;
-    background: #0A0A0A; color: #ffffff; font-size: 14px; font-weight: 700;
-    font-style: italic; letter-spacing: 0.2px; line-height: 1; white-space: nowrap;
+    position: absolute !important; z-index: 2 !important; padding: 4px 10px !important; border-radius: 999px !important;
+    background: #0A0A0A !important; color: #ffffff !important; font-size: 14px !important; font-weight: 700 !important;
+    font-style: italic !important; letter-spacing: 0.2px !important; line-height: 1 !important; white-space: nowrap !important;
   }
   .cpt-collect-graphic .cpt-pts-25 {
-    top: -10%; left: -22%; border: 1.5px solid #ED1B42;
-    animation: cptPtsIn 0.45s cubic-bezier(0.22, 1, 0.36, 1) 0.45s both;
+    top: -10% !important; left: -22% !important; border: 1.5px solid #ED1B42 !important;
+    animation: cptPtsIn 0.45s cubic-bezier(0.22, 1, 0.36, 1) 0.45s both !important;
   }
   .cpt-collect-graphic .cpt-pts-100 {
-    right: -29%; bottom: 1%; border: 1.5px solid #FFB500;
-    animation: cptPtsIn 0.45s cubic-bezier(0.22, 1, 0.36, 1) 0.85s both;
+    right: -29% !important; bottom: 1% !important; border: 1.5px solid #FFB500 !important;
+    animation: cptPtsIn 0.45s cubic-bezier(0.22, 1, 0.36, 1) 0.85s both !important;
   }
   .cpt-collect-graphic .cpt-collect-chip {
-    position: absolute; top: 50%; left: 50%;
-    width: calc(116 / 240 * 100%); aspect-ratio: 1; height: auto;
-    overflow: visible; transform: translate(-50%, -50%);
+    position: absolute !important; top: 50% !important; left: 50% !important;
+    width: calc(116 / 240 * 100%) !important; aspect-ratio: 1 !important; height: auto !important;
+    overflow: visible !important; transform: translate(-50%, -50%) !important;
   }
   .cpt-collect-graphic .cpt-collect-chip-scale {
-    width: 100%; height: 100%; transform-origin: center center;
-    animation: cptChipIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+    width: 100% !important; height: 100% !important; transform-origin: center center !important;
+    animation: cptChipIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) both !important;
   }
   .cpt-collect-graphic .cpt-collect-chip-inner {
-    position: relative; width: 100%; height: 100%; overflow: hidden;
-    border-radius: 50%; box-shadow: 0px -10px 45px 10px #ED1B4240;
+    position: relative !important; width: 100% !important; height: 100% !important; overflow: hidden !important;
+    border-radius: 50% !important; box-shadow: 0px -10px 45px 10px #ED1B4240 !important;
   }
   .cpt-collect-graphic .cpt-collect-chip-image {
-    display: block; width: 118%; height: 118%; margin: -9%;
-    object-fit: cover; pointer-events: none;
+    display: block !important; width: 118% !important; height: 118% !important; margin: -9% !important;
+    object-fit: cover !important; pointer-events: none !important;
   }
 </style>
