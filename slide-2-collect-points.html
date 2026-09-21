@@ -1,0 +1,77 @@
+<!-- Popup17 onboarding — Slide 2: Step One / Collect Points -->
+<div class="cpt-slide-layout">
+  <div class="cpt-collect-graphic">
+    <svg class="cpt-collect-star" style="top:30%;left:18%;width:7.5%;animation-delay:0.55s" viewBox="0 0 36 33" aria-hidden="true"><path d="M18 6.5L20.6942 14.7918H29.4127L22.3593 19.9164L25.0534 28.2082L18 23.0836L10.9466 28.2082L13.6407 19.9164L6.58732 14.7918H15.3058L18 6.5Z" fill="currentColor" /></svg>
+    <svg class="cpt-collect-star" style="top:26%;left:76%;width:7.5%;animation-delay:0.7s" viewBox="0 0 36 33" aria-hidden="true"><path d="M18 6.5L20.6942 14.7918H29.4127L22.3593 19.9164L25.0534 28.2082L18 23.0836L10.9466 28.2082L13.6407 19.9164L6.58732 14.7918H15.3058L18 6.5Z" fill="currentColor" /></svg>
+    <svg class="cpt-collect-star" style="top:42%;left:12%;width:10%;animation-delay:0.82s" viewBox="0 0 36 33" aria-hidden="true"><path d="M18 6.5L20.6942 14.7918H29.4127L22.3593 19.9164L25.0534 28.2082L18 23.0836L10.9466 28.2082L13.6407 19.9164L6.58732 14.7918H15.3058L18 6.5Z" fill="currentColor" /></svg>
+    <svg class="cpt-collect-star" style="top:40%;left:80%;width:10.833%;animation-delay:0.94s" viewBox="0 0 36 33" aria-hidden="true"><path d="M18 6.5L20.6942 14.7918H29.4127L22.3593 19.9164L25.0534 28.2082L18 23.0836L10.9466 28.2082L13.6407 19.9164L6.58732 14.7918H15.3058L18 6.5Z" fill="currentColor" /></svg>
+    <svg class="cpt-collect-star" style="top:60%;left:18%;width:7.5%;animation-delay:1.06s" viewBox="0 0 36 33" aria-hidden="true"><path d="M18 6.5L20.6942 14.7918H29.4127L22.3593 19.9164L25.0534 28.2082L18 23.0836L10.9466 28.2082L13.6407 19.9164L6.58732 14.7918H15.3058L18 6.5Z" fill="currentColor" /></svg>
+    <svg class="cpt-collect-star" style="top:56%;left:76%;width:7.5%;animation-delay:1.18s" viewBox="0 0 36 33" aria-hidden="true"><path d="M18 6.5L20.6942 14.7918H29.4127L22.3593 19.9164L25.0534 28.2082L18 23.0836L10.9466 28.2082L13.6407 19.9164L6.58732 14.7918H15.3058L18 6.5Z" fill="currentColor" /></svg>
+
+    <div class="cpt-collect-chip">
+      <span class="cpt-pts-pill cpt-pts-25">+25 PTS</span>
+      <span class="cpt-pts-pill cpt-pts-100">+100 PTS</span>
+      <div class="cpt-collect-chip-scale">
+        <div class="cpt-collect-chip-inner">
+          <img class="cpt-collect-chip-image" src="https://content.captainup.com/widget/pb-points-chip.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cpt-onboarding-content">
+    <p class="cpt-howto-step">Step One</p>
+    <h2 class="cpt-onboarding-heading">
+      <span class="cpt-onboarding-title">Collect <span class="cpt-onboarding-title-highlight">Points</span></span>
+    </h2>
+    <p class="cpt-onboarding-description">Every casino bet earns points. The more you play, the faster they stack.</p>
+  </div>
+</div>
+
+<style>
+  .cpt-slide-layout { display: flex; flex-direction: column; justify-content: center; gap: 30px; }
+
+  @keyframes cptChipIn { from { opacity: 0; transform: scale(0.72); } to { opacity: 1; transform: scale(1); } }
+  @keyframes cptStarIn { from { opacity: 0; transform: scale(0); } to { opacity: 1; transform: scale(1); } }
+  @keyframes cptPtsIn { from { opacity: 0; transform: translateY(10px) scale(0.82); } to { opacity: 1; transform: translateY(0) scale(1); } }
+
+  .cpt-collect-graphic {
+    position: relative; width: 240px; max-width: 100%;
+    aspect-ratio: 240 / 210; height: auto; margin: 0 auto; color: #D05353;
+  }
+  .cpt-collect-graphic .cpt-collect-star {
+    position: absolute; display: block; height: auto; aspect-ratio: 36 / 33;
+    overflow: visible; color: #D05353;
+    animation: cptStarIn 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  .cpt-collect-graphic .cpt-pts-pill {
+    position: absolute; z-index: 2; padding: 4px 10px; border-radius: 999px;
+    background: #0A0A0A; color: #ffffff; font-size: 14px; font-weight: 700;
+    font-style: italic; letter-spacing: 0.2px; line-height: 1; white-space: nowrap;
+  }
+  .cpt-collect-graphic .cpt-pts-25 {
+    top: -10%; left: -22%; border: 1.5px solid #ED1B42;
+    animation: cptPtsIn 0.45s cubic-bezier(0.22, 1, 0.36, 1) 0.45s both;
+  }
+  .cpt-collect-graphic .cpt-pts-100 {
+    right: -29%; bottom: 1%; border: 1.5px solid #FFB500;
+    animation: cptPtsIn 0.45s cubic-bezier(0.22, 1, 0.36, 1) 0.85s both;
+  }
+  .cpt-collect-graphic .cpt-collect-chip {
+    position: absolute; top: 50%; left: 50%;
+    width: calc(116 / 240 * 100%); aspect-ratio: 1; height: auto;
+    overflow: visible; transform: translate(-50%, -50%);
+  }
+  .cpt-collect-graphic .cpt-collect-chip-scale {
+    width: 100%; height: 100%; transform-origin: center center;
+    animation: cptChipIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  .cpt-collect-graphic .cpt-collect-chip-inner {
+    position: relative; width: 100%; height: 100%; overflow: hidden;
+    border-radius: 50%; box-shadow: 0px -10px 45px 10px #ED1B4240;
+  }
+  .cpt-collect-graphic .cpt-collect-chip-image {
+    display: block; width: 118%; height: 118%; margin: -9%;
+    object-fit: cover; pointer-events: none;
+  }
+</style>
