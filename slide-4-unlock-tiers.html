@@ -50,65 +50,65 @@
 </div>
 
 <style>
-  .cpt-slide-layout { display: flex; flex-direction: column; justify-content: center; gap: 30px; }
+  .cpt-slide-layout { display: flex !important; flex-direction: column !important; justify-content: center !important; gap: 30px !important; }
 
-  @keyframes cptChipIn { from { opacity: 0; transform: scale(0.72); } to { opacity: 1; transform: scale(1); } }
+  @keyframes cptChipIn { from { opacity: 0 !important; transform: scale(0.72) !important; } to { opacity: 1 !important; transform: scale(1) !important; } }
 
   .cpt-unlock-graphic {
-    position: relative; width: 280px; max-width: 100%; margin: 0 auto 50px;
-    animation: cptChipIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+    position: relative !important; width: 280px !important; max-width: 100% !important; margin: 0 auto 50px !important;
+    animation: cptChipIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) both !important;
   }
   .cpt-unlock-graphic::before, .cpt-unlock-graphic::after {
-    content: ''; position: absolute; left: 0; right: 0; height: 80px; z-index: -1;
-    border-radius: 8px; margin: 0 auto; transform-origin: center center; animation: inherit;
+    content: '' !important; position: absolute !important; left: 0 !important; right: 0 !important; height: 80px !important; z-index: -1 !important;
+    border-radius: 8px !important; margin: 0 auto !important; transform-origin: center center !important; animation: inherit !important;
   }
-  .cpt-unlock-graphic::after  { top: 14px; background: #ED1B4299; width: calc(100% - 30px); }
-  .cpt-unlock-graphic::before { top: 24px; background: #ED1B4233; width: calc(100% - 60px); }
+  .cpt-unlock-graphic::after  { top: 14px !important; background: #ED1B4299 !important; width: calc(100% - 30px) !important; }
+  .cpt-unlock-graphic::before { top: 24px !important; background: #ED1B4233 !important; width: calc(100% - 60px) !important; }
 
   .cpt-unlock-card {
-    position: relative; padding: 10px 12px 12px; border-radius: 24px;
-    background: #1A1A1A; overflow: visible;
+    position: relative !important; padding: 10px 12px 12px !important; border-radius: 24px !important;
+    background: #1A1A1A !important; overflow: visible !important;
   }
   .cpt-unlock-glow {
-    position: absolute; top: 6px; width: 96px; height: 96px;
-    pointer-events: none; z-index: 0; color: #FFB500;
+    position: absolute !important; top: 6px !important; width: 96px !important; height: 96px !important;
+    pointer-events: none !important; z-index: 0 !important; color: #FFB500 !important;
   }
   .cpt-unlock-glow::before {
-    content: ''; position: absolute; top: 0; width: 104px; height: 70px; border-radius: 24px;
-    background: linear-gradient(130deg, currentColor 3.7%, rgba(0, 0, 0, 0) 33.05%);
-    filter: blur(7px);
+    content: '' !important; position: absolute !important; top: 0 !important; width: 104px !important; height: 70px !important; border-radius: 24px !important;
+    background: linear-gradient(130deg, currentColor 3.7%, rgba(0, 0, 0, 0) 33.05%) !important;
+    filter: blur(7px) !important;
   }
-  .cpt-unlock-glow.cpt-left  { left: 6px;  clip-path: path('M 0 24 A 24 24 0 0 1 24 0 H 96 L 0 96 Z'); }
-  .cpt-unlock-glow.cpt-left::before { left: 0; }
-  .cpt-unlock-glow.cpt-right { right: 6px; clip-path: path('M 0 0 H 72 A 24 24 0 0 1 96 24 L 96 96 Z'); }
-  .cpt-unlock-glow.cpt-right::before { right: 0; transform: scaleX(-1); }
+  .cpt-unlock-glow.cpt-left  { left: 6px !important;  clip-path: path('M 0 24 A 24 24 0 0 1 24 0 H 96 L 0 96 Z') !important; }
+  .cpt-unlock-glow.cpt-left::before { left: 0 !important; }
+  .cpt-unlock-glow.cpt-right { right: 6px !important; clip-path: path('M 0 0 H 72 A 24 24 0 0 1 96 24 L 96 96 Z') !important; }
+  .cpt-unlock-glow.cpt-right::before { right: 0 !important; transform: scaleX(-1) !important; }
 
   .cpt-unlock-medal {
-    position: relative; flex-shrink: 0; z-index: 2; width: 50px; height: 60px;
-    margin-top: -28px; margin-bottom: -6px; pointer-events: none;
+    position: relative !important; flex-shrink: 0 !important; z-index: 2 !important; width: 50px !important; height: 60px !important;
+    margin-top: -28px !important; margin-bottom: -6px !important; pointer-events: none !important;
   }
-  .cpt-unlock-medal svg { display: block; width: 100%; height: 100%; overflow: visible; }
+  .cpt-unlock-medal svg { display: block !important; width: 100% !important; height: 100% !important; overflow: visible !important; }
   .cpt-unlock-medal-inner {
-    display: block; width: 100%; height: 100%;
-    animation: cptChipIn 0.55s cubic-bezier(0.22, 1, 0.36, 1) 0.18s both;
+    display: block !important; width: 100% !important; height: 100% !important;
+    animation: cptChipIn 0.55s cubic-bezier(0.22, 1, 0.36, 1) 0.18s both !important;
   }
 
   .cpt-unlock-title {
-    position: relative; z-index: 1; display: flex; align-items: center; justify-content: center;
-    margin: 0 0 12px; min-height: 24px; font-size: 24px; font-weight: 700;
-    letter-spacing: 0.6px; text-transform: uppercase; line-height: 1; white-space: nowrap;
+    position: relative !important; z-index: 1 !important; display: flex !important; align-items: center !important; justify-content: center !important;
+    margin: 0 0 12px !important; min-height: 24px !important; font-size: 24px !important; font-weight: 700 !important;
+    letter-spacing: 0.6px !important; text-transform: uppercase !important; line-height: 1 !important; white-space: nowrap !important;
   }
-  .cpt-unlock-title .cpt-unlock-title-name { letter-spacing: inherit; font-style: italic; color: #FFB500; }
-  .cpt-unlock-title .cpt-unlock-title-kind { letter-spacing: inherit; font-style: italic; color: #ffffff; }
+  .cpt-unlock-title .cpt-unlock-title-name { letter-spacing: inherit !important; font-style: italic !important; color: #FFB500 !important; }
+  .cpt-unlock-title .cpt-unlock-title-kind { letter-spacing: inherit !important; font-style: italic !important; color: #ffffff !important; }
 
   .cpt-unlock-bar {
-    position: relative; z-index: 1; display: flex; align-items: center; justify-content: center;
-    width: 50%; height: 24px; margin: 0 auto; border-radius: 16px; background: #333333;
-    overflow: visible; border: 1px solid #FFFFFF1A; gap: 8px;
+    position: relative !important; z-index: 1 !important; display: flex !important; align-items: center !important; justify-content: center !important;
+    width: 50% !important; height: 24px !important; margin: 0 auto !important; border-radius: 16px !important; background: #333333 !important;
+    overflow: visible !important; border: 1px solid #FFFFFF1A !important; gap: 8px !important;
   }
-  .cpt-unlock-track { width: 100%; height: 6px; border-radius: 999px; background: #FFFFFF33; }
-  .cpt-unlock-decor { z-index: 3; width: 28px; height: 28px; color: #FFB500; pointer-events: none; }
-  .cpt-unlock-decor.cpt-left  { margin-left: -14px; }
-  .cpt-unlock-decor.cpt-right { margin-right: -8px; }
-  .cpt-unlock-decor svg { display: block; width: 30px; height: 30px; }
+  .cpt-unlock-track { width: 100% !important; height: 6px !important; border-radius: 999px !important; background: #FFFFFF33 !important; }
+  .cpt-unlock-decor { z-index: 3 !important; width: 28px !important; height: 28px !important; color: #FFB500 !important; pointer-events: none !important; }
+  .cpt-unlock-decor.cpt-left  { margin-left: -14px !important; }
+  .cpt-unlock-decor.cpt-right { margin-right: -8px !important; }
+  .cpt-unlock-decor svg { display: block !important; width: 30px !important; height: 30px !important; }
 </style>
