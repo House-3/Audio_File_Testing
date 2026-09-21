@@ -42,27 +42,27 @@
 </div>
 
 <style>
-  .cpt-slide-layout { display: flex; flex-direction: column; justify-content: center; gap: 30px; }
+  .cpt-slide-layout { display: flex !important; flex-direction: column !important; justify-content: center !important; gap: 30px !important; }
 
-  @keyframes cptChipIn { from { opacity: 0; transform: scale(0.72); } to { opacity: 1; transform: scale(1); } }
-  @keyframes cptStarIn { from { opacity: 0; transform: scale(0); } to { opacity: 1; transform: scale(1); } }
+  @keyframes cptChipIn { from { opacity: 0 !important; transform: scale(0.72) !important; } to { opacity: 1 !important; transform: scale(1) !important; } }
+  @keyframes cptStarIn { from { opacity: 0 !important; transform: scale(0) !important; } to { opacity: 1 !important; transform: scale(1) !important; } }
 
-  .cpt-onboarding-chip { display: block; width: 170px; margin: 0 auto; color: #D05353; }
-  .cpt-onboarding-chip .cpt-onboarding-chip-svg { width: 100%; height: 100%; overflow: visible; }
+  .cpt-onboarding-chip { display: block !important; width: 170px !important; margin: 0 auto !important; color: #D05353 !important; }
+  .cpt-onboarding-chip .cpt-onboarding-chip-svg { width: 100% !important; height: 100% !important; overflow: visible !important; }
   .cpt-onboarding-chip .cpt-onboarding-chip-body {
-    transform-box: fill-box; transform-origin: center;
-    animation: cptChipIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+    transform-box: fill-box !important; transform-origin: center !important;
+    animation: cptChipIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) both !important;
   }
   .cpt-onboarding-chip .cpt-onboarding-star {
-    transform-box: fill-box; transform-origin: center;
-    animation: cptStarIn 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+    transform-box: fill-box !important; transform-origin: center !important;
+    animation: cptStarIn 0.45s cubic-bezier(0.22, 1, 0.36, 1) both !important;
   }
-  .cpt-onboarding-stars > g:nth-child(1) .cpt-onboarding-star { animation-delay: 0.18s; }
-  .cpt-onboarding-stars > g:nth-child(2) .cpt-onboarding-star { animation-delay: 0.26s; }
-  .cpt-onboarding-stars > g:nth-child(3) .cpt-onboarding-star { animation-delay: 0.34s; }
-  .cpt-onboarding-stars > g:nth-child(4) .cpt-onboarding-star { animation-delay: 0.42s; }
-  .cpt-onboarding-stars > g:nth-child(5) .cpt-onboarding-star { animation-delay: 0.50s; }
-  .cpt-onboarding-stars > g:nth-child(6) .cpt-onboarding-star { animation-delay: 0.58s; }
-  .cpt-onboarding-stars > g:nth-child(7) .cpt-onboarding-star { animation-delay: 0.66s; }
-  .cpt-onboarding-stars > g:nth-child(8) .cpt-onboarding-star { animation-delay: 0.74s; }
+  .cpt-onboarding-stars > g:nth-child(1) .cpt-onboarding-star { animation-delay: 0.18s !important; }
+  .cpt-onboarding-stars > g:nth-child(2) .cpt-onboarding-star { animation-delay: 0.26s !important; }
+  .cpt-onboarding-stars > g:nth-child(3) .cpt-onboarding-star { animation-delay: 0.34s !important; }
+  .cpt-onboarding-stars > g:nth-child(4) .cpt-onboarding-star { animation-delay: 0.42s !important; }
+  .cpt-onboarding-stars > g:nth-child(5) .cpt-onboarding-star { animation-delay: 0.50s !important; }
+  .cpt-onboarding-stars > g:nth-child(6) .cpt-onboarding-star { animation-delay: 0.58s !important; }
+  .cpt-onboarding-stars > g:nth-child(7) .cpt-onboarding-star { animation-delay: 0.66s !important; }
+  .cpt-onboarding-stars > g:nth-child(8) .cpt-onboarding-star { animation-delay: 0.74s !important; }
 </style>
